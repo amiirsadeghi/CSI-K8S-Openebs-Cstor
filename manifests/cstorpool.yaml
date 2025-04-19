@@ -6,16 +6,16 @@ metadata:
 spec:
   pools:
     - nodeSelector:
-        kubernetes.io/hostname: "worker1"
+        kubernetes.io/hostname: "worker-node-name"
       dataRaidGroups:
         - blockDevices:
-            - blockDeviceName: "blockdevice-2fe64008972de76c1ccf104874808a7f"
+            - blockDeviceName: "blockdevice-id"
       poolConfig:
         dataRaidGroupType: "stripe"
     - nodeSelector:
-        kubernetes.io/hostname: "worker2"
+        kubernetes.io/hostname: "worker-node-name"
       dataRaidGroups:
         - blockDevices:
-            - blockDeviceName: "blockdevice-66cf2798b90d5bcdbccdaa0c6cff7e72"
+            - blockDeviceName: "blockdevice-id"
       poolConfig:
         dataRaidGroupType: "stripe"
